@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1>Cozy House</h1>
+
+  <header id="header" class="header header-light">
+    <div class="container">
+      <div class="header__inner">
+        <a href="../main/index.html" class="logo">
+          <span>Cozy House</span>
+          <span>Shelter for pets in Boston</span>
+        </a>
+        <div id="burger" class="burger">
+          <span></span>
+        </div>
+        <nav class="header__nav">
+          <ul>
+            <li class="nav__link">
+              <a href="../main/index.html">About the shelter</a>
+            </li>
+            <li class="nav__link">
+              <a href="./index.html" class="active">Our pets</a>
+            </li>
+            <li class="nav__link">
+              <a href="#">Help the shelter</a>
+            </li>
+            <li class="nav__link">
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrapper static-wrapper">
+
+    <section class="pets">
+      <div class="container">
+        <h3>Our friends who <br>
+          are looking for a house</h3>
+        <div class="pets__grid">
+
+        </div>
+        <div class="pets__navigation">
+          <nav>
+            <ul id="pagination">
+              <li><button id="firstPage" class="btn-arrow">
+                  <<</button> </li> <li><button id="prevPage" class="btn-arrow">
+                      <</button> </li> <li>
+                        <div id="numOfPage" class="btn-arrow active">1</div>
+              </li>
+              <li><button id="nextPage" class="btn-arrow">></button></li>
+              <li><button id="lastPage" class="btn-arrow">>></button></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col">
+          <h3>For questions and suggestions</h3>
+          <a class="footer__link" href="mailto:email@shelter.com">
+            <span>
+              <img src="../../assets/icons/mail.svg" alt="">
+            </span>
+            <h4>email@shelter.com</h4>
+          </a>
+          <a class="footer__link" href="tel:+7800229933">
+            <span>
+              <img src="../../assets/icons/phone.svg" alt="">
+            </span>
+            <h4>+13 674 567 75 54</h4>
+          </a>
+        </div>
+        <div class="footer__col">
+          <h3>We are waiting for your visit</h3>
+          <a class="footer__link" href="https://goo.gl/maps/GMUeBBWwYs4LDQ868" target="_blank">
+            <span>
+              <img src="../../assets/icons/pin.svg" alt="">
+            </span>
+            <h4>1 Central Street, Boston (entrance from the store)</h4>
+          </a>
+          <a class="footer__link" href="https://goo.gl/maps/C7XTrTay9AEsrSsTA" target="_blank">
+            <span>
+              <img src="../../assets/icons/pin.svg" alt="">
+            </span>
+            <h4>18 South Park, London </h4>
+          </a>
+        </div>
+        <div class="footer__col">
+          <img src="../../assets/images/footer-puppy.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="overlay" class="overlay"></div>
+
+  <div class="modal pet">
+    <button class="modal__close">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M7.42618 6.00003L11.7046 1.72158C12.0985 1.32775 12.0985 0.689213 11.7046 0.295433C11.3108 -0.0984027 10.6723 -0.0984027 10.2785 0.295433L5.99998 4.57394L1.72148 0.295377C1.32765 -0.098459 0.68917 -0.098459 0.295334 0.295377C-0.0984448 0.689213 -0.0984448 1.32775 0.295334 1.72153L4.57383 5.99997L0.295334 10.2785C-0.0984448 10.6723 -0.0984448 11.3108 0.295334 11.7046C0.68917 12.0985 1.32765 12.0985 1.72148 11.7046L5.99998 7.42612L10.2785 11.7046C10.6723 12.0985 11.3108 12.0985 11.7046 11.7046C12.0985 11.3108 12.0985 10.6723 11.7046 10.2785L7.42618 6.00003Z"
+          fill="#292929" />
+      </svg>
+    </button>
+    <div class="pet__inner">
+      <div class="pet__img">
+        <img id="photo" src="../../assets/images/pets-jennifer.png" alt="">
+      </div>
+      <div class="pet__desc">
+        <h3 id="name">Jennifer</h3>
+        <h4 id="type">Dog - Labrador</h4>
+        <p id="description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever
+          home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm
+          in the house if she has all of her favorite toys.</p>
+        <ul>
+          <li><strong>Age:</strong> <span id="age"></span></li>
+          <li><strong>Inoculations:</strong> <span id="inoculations"></span></li>
+          <li><strong>Diseases:</strong> <span id="diseases"></span></li>
+          <li><strong>Parasites:</strong> <span id="parasites"></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
